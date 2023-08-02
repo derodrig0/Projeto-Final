@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Locadora 2000</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <img class="me-3" src="img/film.svg" alt="Locadora 2000" />
+        <a class="navbar-brand" href="#topo">Locadora 2000</a>
+
+        <div class="collapse navbar-collapse" id="navBarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li>
+              <a class="nav-link active" aria-current="page" href="#tabfilmes"
+                >Filmes Disponiveis</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="dropGeneros"
+                role="button"
+                data-bs-toggle="dropdown"
+                href="#drop"
+                aria-expanded="false"
+                >Filmes por Categoria</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="gacao">Ação</a></li>
+                <li><a class="dropdown-item" href="ganim">Animação</a></li>
+                <li><a class="dropdown-item" href="groman">Romance</a></li>
+                <li><a class="dropdown-item" href="gsusp">Suspense</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#cadfilmes">Cadastrar Filmes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="display-1 text-center mb-5 mt-3">Locadora 2000</h1>
+    <!-- TABELA -->
+    <div class="container">
+      <table class="table table-striped table-hover text-center">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Título</th>
+            <th scope="col">Diretor</th>
+            <th scope="col">Lançamento</th>
+            <th scope="col">Gêneros</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-center table-primary" colspan="5" id="gacao">Ação</th>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td scope="col">Batman - The Dark Knight Rises</td>
+            <td scope="col">Christopher Nolan</td>
+            <td scope="col">2012</td>
+            <td scope="col">Ação</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td scope="col">Vingadores: Ultimato</td>
+            <td scope="col">Anthony Russo, Joe Russo</td>
+            <td scope="col">2019</td>
+            <td scope="col">Ação</td>
+          </tr>
+          <tr>
+            <th class="text-center table-primary" colspan="5" id="ganim">Animação</th>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td scope="col">Raya e o Último Dragão</td>
+            <td scope="col">Carlos López Estrada, Don Hall</td>
+            <td scope="col">2021</td>
+            <td scope="col">Animação</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td scope="col">Encanto</td>
+            <td scope="col">Byron Howard, Jared Bush</td>
+            <td scope="col">2021</td>
+            <td scope="col">Animação</td>
+          </tr>
+          <tr>
+            <th class="text-center table-primary" colspan="5" id="groman">Romance</th>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td scope="col">A Culpa É das Estrelas</td>
+            <td scope="col">Josh Boone</td>
+            <td scope="col">2014</td>
+            <td scope="col">Romance</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td scope="col">Como Eu Era Antes de Você</td>
+            <td scope="col">Thea Sharrock</td>
+            <td scope="col">2016</td>
+            <td scope="col">Romance</td>
+          </tr>
+          <tr>
+            <th class="text-center table-primary" colspan="5" id="gsusp">Suspense</th>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td scope="col">Os Suspeitos</td>
+            <td scope="col">Denis Villeneuve</td>
+            <td scope="col">2013</td>
+            <td scope="col">Suspense</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td scope="col">Fragmentado</td>
+            <td scope="col">M. Night Shyamalan</td>
+            <td scope="col">2017</td>
+            <td scope="col">Suspense</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mb-5 mt-5">
+      <hr class="border-primary border-3 opcacity-75">
+    </div>
+    <div class="container mb-5">
+      <h2 class="text-center mb-4">Cadastro de Filmes</h2>
+      <form id="cadfilmes">
+        <!-- Cadastro do código e do título -->
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="codFilm" class="form-label">Código</label>
+            <input type="text" class="form-control" id="codFilm">
+          </div>
+          <div class="mb-3 col">
+            <label for="titleFilm" class="form-label">Título</label>
+            <input type="text" class="form-control" id="titleFilm">
+          </div>
+        </div>
+        <!-- Cadastro do diretor e do lançamento -->
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="directorFilm" class="form-label">Diretor(a)</label>
+            <input type="text" class="form-control" id="directorFilm">
+          </div>
+          <div class="mb-3 col">
+            <label for="releaseDateFilm" class="form-label">Data Lançamento</label>
+            <input type="text" class="form-control" id="releaseDateFilm" placeholder="DD/MM/YYYY">
+          </div>
+        </div>
+        <!-- Cadastro do gênero -->
+        <div class="row mt-3">
+          <p>Selecione o Gênero</p>
+          <div class="col form-check ms-5">
+            <input type="radio" id="radioGAcao" name="radio" class="form-check-input" value="acao">
+            <label for="radioGAcao">Ação</label>
+          </div>
+          <div class="col form-check">
+            <input type="radio" id="radioGAnim" name="radio" class="form-check-input" value="animacao">
+            <label for="radioGAnim">Animação</label>
+          </div>
+          <div class="col form-check">
+            <input type="radio" id="radioGRoman" name="radio" class="form-check-input" value="romance">
+            <label for="radioGRoman">Romance</label>
+          </div>
+          <div class="col form-check">
+            <input type="radio" id="radioGSusp" name="radio" class="form-check-input" value="suspense">
+            <label for="radioGSusp">Suspense</label>
+          </div>
+        </div>
+        <!-- Botão para cadastrar o filme -->
+        <div class="col-auto d-flex justify-content-center mt-5">
+          <button onclick="cadastraFilme()" type="submit" class="btn btn-primary">
+            Cadastrar Filme
+          </button>
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
