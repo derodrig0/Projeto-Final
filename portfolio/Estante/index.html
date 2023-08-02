@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  
   <title>Estante de Livros</title>
+  
+  <style>
+    body{
+      background: hsla(194, 57%, 44%, 1);
+      background: linear-gradient(90deg, hsla(194, 57%, 44%, 1) 35%, hsla(260, 66%, 25%, 1) 100%);
+      /* color: #FAFAFA; */
+      color: hsla(260, 66%, 25%, 1);
+      width: 800px;
+    }
+    .cabecalho, .sumario, .livros{
+      margin-left: 2rem;
+    }
+    .livros img{
+      width: 200px;
+      height: 300px;
+    }
+    .livros img:hover{
+      border: 1px solid hsla(260, 66%, 25%, 1);
+    }
+    .sinopse{
+      text-align: justify;
+    }
+    table{
+      width: 100%;
+    }
+    table, th, td{
+      border: 2px solid hsla(260, 66%, 25%, 1);;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    table th{
+      width: 18%;
+    }
+    a{
+      text-decoration: none;
+      /* color: #FAFAFA; */
+      color: hsla(260, 66%, 25%, 1);
+    }
+    hr{
+      margin: 4rem 0;
+      background-color: hsla(260, 66%, 25%, 1);
+      border: none;
+      height: 2px;
+    }
+  </style>
+
 </head>
 <body>
   <div class="cabecalho">
@@ -63,8 +110,7 @@
     </a>
     <h3>Sinopse</h3>
     <p class="sinopse">
-      A Sociedade do Anel, o volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico de fantasia moderno, conquistando milhões de leitores e se tornando o padrão de referência para todas as outras obras do gênero até hoje.
-      A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das antigas mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente quanto o mundo real.
+      A Sociedade do Anel O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico de fantasia moderno, conquistando milhões de leitores e se tornando o padrão de referência para todas as outras obras do gênero até hoje. A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das antigas mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente quanto o mundo real. A Sociedade do Anel começa no Condado, a região rural do oeste da Terra-média onde vivem os diminutos e pacatos hobbits. Bilbo Bolseiro, um dos raros aventureiros desse povo, cujas peripécias foram contadas em O Hobbit, resolve ir embora do Condado e deixa sua considerável herança nas mãos de seu jovem parente Frodo. O mais importante legado de Bilbo é o anel mágico que costumava usar para se tornar invisível. No entanto, o mago Gandalf, companheiro de aventuras do velho hobbit, revela a Frodo que o objeto é o Um Anel, a raiz do poder demoníaco de Sauron, o Senhor Sombrio, que deseja escravizar todos os povos da Terra-média. A única maneira de eliminar a ameaça de Sauron é destruir o Um Anel nas entranhas da própria montanha de fogo onde foi forjado. A revelação faz com que Frodo e seus companheiros hobbits Sam, Merry e Pippin deixem a segurança do Condado e iniciem uma perigosa jornada rumo ao leste. Ao lado de representantes dos outros Povos Livres que resistem ao Senhor Sombrio, eles formam a Sociedade do Anel. Alguém uma vez disse que o mundo dos leitores de língua inglesa se divide entre os que já leram O Senhor dos Anéis e os que um dia lerão o livro. Com esta nova tradução da obra, o fascínio dessa aventura atemporal ficará ainda mais evidente para os leitores brasileiros, tanto os que já conhecem a saga como os que estão prestes a descobrir seu encanto.
     </p>
     <p>Fonte: Google Books</p>
     <table class="tabela">
