@@ -1,242 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Estante de Livros</title>
-  
-  <style>
-    body{
-      background: hsla(194, 57%, 44%, 1);
-      background: linear-gradient(90deg, hsla(194, 57%, 44%, 1) 35%, hsla(260, 66%, 25%, 1) 100%);
-      /* color: #FAFAFA; */
-      color: hsla(260, 66%, 25%, 1);
-      width: 800px;
-    }
-    .cabecalho, .sumario, .livros{
-      margin-left: 2rem;
-    }
-    .livros img{
-      width: 200px;
-      height: 300px;
-    }
-    .livros img:hover{
-      border: 1px solid hsla(260, 66%, 25%, 1);
-    }
-    .sinopse{
-      text-align: justify;
-    }
-    table{
-      width: 100%;
-    }
-    table, th, td{
-      border: 2px solid hsla(260, 66%, 25%, 1);;
-      border-collapse: collapse;
-      text-align: center;
-    }
-    table th{
-      width: 18%;
-    }
-    a{
-      text-decoration: none;
-      /* color: #FAFAFA; */
-      color: hsla(260, 66%, 25%, 1);
-    }
-    hr{
-      margin: 4rem 0;
-      background-color: hsla(260, 66%, 25%, 1);
-      border: none;
-      height: 2px;
-    }
-  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
-<body>
-  <div class="cabecalho">
-    <h1>Estante de Livros</h1>
-    <p>Sua biblioteca à um clique de distancia</p>
-  </div>
+    <title>Estante de Livros</title>
 
-  <div class="sumario">
-    <h2>Sumário:</h2>
-    <ol>
-      <li><a href="#1">Harry Potter e a Ordem da Fênix</a></li>
-      <li><a href="#2">O Senhor dos Anéis: A Sociedade do Anel</a></li>
-      <li><a href="#3">Game of Thrones: As Crônicas de Gelo e Fogo</a></li>
-      <li><a href="#4">As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-roupa</a></li>
-      <li><a href="#5">World of Warcraft: Marés de Guerra</a></li>
-    </ol>
-  </div>
-  <hr>
-  <section class="livros primeiro" id="1">
-    <h2>Harry Potter e a Ordem da Fênix</h2>
-    <a href="https://www.amazon.com.br/Harry-Potter-Ordem-Fe%CC%82nix-S%C3%A9rie-ebook/dp/B01LQM96IC" target="_blank" rel="noopener noreferrer">
-      <img src="https://m.media-amazon.com/images/I/519namgWJTL.jpg" alt="Capa Livro Harry Potter e a Ordem da Fênix">
-    </a>
-    <h3>Sinopse</h3>
-    <p class="sinopse">
-      Parece impossível, mas, no bairro mais Muggle do mundo Muggle, Harry é emboscado por Dementors! Para salvar a sua vida e a do primo Dudley, Harry não tem outra hipótese senão usar magia - mesmo sabendo que isso significará a sua expulsão mais que certa de Hogwarts. Enquanto o Ministério da Magia continua a não acreditar que o terrível Senhor das Trevas está de volta, Voldemort e os seus fiéis Devoradores da Morte já começaram a preparar o seu regresso ao poder. Porém, há uma nova esperança: uma antiga ordem secreta, da qual os pais de Harry fizeram parte, voltou a organizar-se e Dumbledore está atento.
-    </p>
-    <p>Fonte: Google Books</p>
-    <table class="tabela">
-      <thead>
-        <th>Data</th>
-        <th>Autor</th>
-        <th>Idioma Original</th>
-        <th>Gêneros</th>
-        <th>Páginas</th>
-        <th>Editora</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>21 de Junho de 2003</td>
-          <td>J. K. Rowling</td>
-          <td>Inglês</td>
-          <td>Romance, Ficção juvenil, Literatura fantástica</td>
-          <td>702</td>
-          <td>Rocco</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <hr>
-  <section class="livros segundo" id="2">
-    <h2>O Senhor dos Anéis: A Sociedade do Anel</h2>
-    <a href="https://www.amazon.com.br/Senhor-dos-An%C3%A9is-Sociedade-Anel/dp/8595084750" target="_blank" rel="noopener noreferrer">
-      <img src="https://m.media-amazon.com/images/I/41RBd2DvmgL.jpg" alt="Capa Livro O Senhor dos Anéis: A Sociedade do Anel">
-    </a>
-    <h3>Sinopse</h3>
-    <p class="sinopse">
-      A Sociedade do Anel O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico de fantasia moderno, conquistando milhões de leitores e se tornando o padrão de referência para todas as outras obras do gênero até hoje. A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das antigas mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente quanto o mundo real. A Sociedade do Anel começa no Condado, a região rural do oeste da Terra-média onde vivem os diminutos e pacatos hobbits. Bilbo Bolseiro, um dos raros aventureiros desse povo, cujas peripécias foram contadas em O Hobbit, resolve ir embora do Condado e deixa sua considerável herança nas mãos de seu jovem parente Frodo. O mais importante legado de Bilbo é o anel mágico que costumava usar para se tornar invisível. No entanto, o mago Gandalf, companheiro de aventuras do velho hobbit, revela a Frodo que o objeto é o Um Anel, a raiz do poder demoníaco de Sauron, o Senhor Sombrio, que deseja escravizar todos os povos da Terra-média. A única maneira de eliminar a ameaça de Sauron é destruir o Um Anel nas entranhas da própria montanha de fogo onde foi forjado. A revelação faz com que Frodo e seus companheiros hobbits Sam, Merry e Pippin deixem a segurança do Condado e iniciem uma perigosa jornada rumo ao leste. Ao lado de representantes dos outros Povos Livres que resistem ao Senhor Sombrio, eles formam a Sociedade do Anel. Alguém uma vez disse que o mundo dos leitores de língua inglesa se divide entre os que já leram O Senhor dos Anéis e os que um dia lerão o livro. Com esta nova tradução da obra, o fascínio dessa aventura atemporal ficará ainda mais evidente para os leitores brasileiros, tanto os que já conhecem a saga como os que estão prestes a descobrir seu encanto.
-    </p>
-    <p>Fonte: Google Books</p>
-    <table class="tabela">
-      <thead>
-        <th>Data</th>
-        <th>Autor</th>
-        <th>Idioma Original</th>
-        <th>Gêneros</th>
-        <th>Páginas</th>
-        <th>Editora</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>29 de julho de 1954</td>
-          <td>J.R.R. Tolkien</td>
-          <td>Inglês</td>
-          <td>Literatura fantástica, Alta fantasia, Ficção de aventura, Romance de cavalaria, Fantasia heroica</td>
-          <td>576</td>
-          <td>HarperCollins Brasil</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <hr>
-  <section class="livros terceiro" id="3">
-    <h2>Game of Thrones: As Crônicas de Gelo e Fogo</h2>
-    <a href="https://www.amazon.com.br/Guerra-dos-Tronos-Cr%C3%B4nicas-Gelo/dp/8556510787" target="_blank" rel="noopener noreferrer">
-      <img src="https://m.media-amazon.com/images/I/515dEL-sQ7L.jpg" alt="Capa Livro Game of Thrones: As Crônicas de Gelo e Fogo">
-    </a>
-    <h3>Sinopse</h3>
-    <p class="sinopse">
-      A guerra dos tronos é o primeiro livro da série best-seller internacional As Crônicas de Gelo e Fogo, que deu origem à adaptação de sucesso da HBO, Game of Thrones.
-      O verão pode durar décadas. O inverno, toda uma vida. E a guerra dos tronos começou.
-      Como Guardião do Norte, lorde Eddard Stark não fica feliz quando o rei Robert o proclama a nova Mão do Rei. Sua honra o obriga a aceitar o cargo e deixar seu posto em Winterfell para rumar para a corte, onde os homens fazem o que lhes convém, não o que devem... e onde um inimigo morto é algo a ser admirado.
-      Longe de casa e com a família dividida, Eddard se vê cada vez mais enredado nas intrigas mortais de Porto Real, sem saber que perigos ainda maiores espreitam a distância.
-      Nas florestas ao norte de Winterfell, forças sobrenaturais se espalham por trás da Muralha que protege a região. E, nas Cidades Livres, o jovem Rei Dragão exilado na Rebelião de Robert planeja sua vingança e deseja recuperar sua herança de família: o Trono de Ferro de Westeros.
-      "A guerra dos tronos é a maior obra de fantasia desde que Bilbo encontrou o Anel."
-    </p>
-    <p>Fonte: Google Books</p>
-    <table class="tabela">
-      <thead>
-        <th>Data</th>
-        <th>Autor</th>
-        <th>Idioma Original</th>
-        <th>Gêneros</th>
-        <th>Páginas</th>
-        <th>Editora</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1 de agosto de 1996</td>
-          <td>George R. R. Martin</td>
-          <td>Inglês</td>
-          <td>Romance, Literatura fantástica, Alta fantasia, Ficção Política</td>
-          <td>600</td>
-          <td>Suma</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <hr>
-  <section class="livros quarto" id="4">
-    <h2>As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-roupa</h2>
-    <a href="https://www.amazon.com.br/As-Cr%C3%B4nicas-N%C3%A1rnia-Feiticeira-Guarda-roupa/dp/6555114746" target="_blank" rel="noopener noreferrer">
-      <img src="https://m.media-amazon.com/images/I/71Oxu4u6evL.jpg" alt="Capa Livro As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-roupa">
-    </a>
-    <h3>Sinopse</h3>
-    <p class="sinopse">
-      Reinos mágicos, criaturas inesquecíveis e batalhas épicas entre o bem o mal: essas histórias são narradas em As Crônicas de Nárnia — uma série de sete livros que acompanha crianças curiosas e suas aventuras entre o nosso mundo e outros universos mágicos.
-      O Leão, a Feiticeira e o Guarda-roupa conta a história dos irmãos Pedro, Susana, Edmundo e Lúcia Pevensie. Em meio a brincadeiras na casa de um velho professor, eles descobrem um misterioso guarda-roupa que os leva a Nárnia, um reino mágico que sofre de um inverno sem fim desde que Jadis, a temida Feiticeira Branca, tomou o poder. Mas uma antiga profecia — que envolve justamente quatro crianças, além de um fantástico leão chamado Aslan — afirma que há esperança para o reino, contanto que se tenha coragem.
-    </p>
-    <p>Fonte: Google Books</p>
-    <table class="tabela">
-      <thead>
-        <th>Data</th>
-        <th>Autor</th>
-        <th>Idioma Original</th>
-        <th>Gêneros</th>
-        <th>Páginas</th>
-        <th>Editora</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>16 de outubro de 1950</td>
-          <td>C.S. Lewis</td>
-          <td>Inglês</td>
-          <td>Romance, Fantasia, Literatura fantástica, Literatura infantil, Alta fantasia, Literatura cristã</td>
-          <td>208</td>
-          <td>HarperCollins Brasil</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <hr>
-  <section class="livros quinto" id="5">
-    <h2>World of Warcraft: Marés de Guerra</h2>
-    <a href="https://www.amazon.com.br/World-Warcraft-guerra-Christie-Golden/dp/8501401250" target="_blank" rel="noopener noreferrer">
-      <img src="https://m.media-amazon.com/images/I/81sNFlK6EQL.jpg" alt="Capa Livro World of Warcraft: Marés de Guerra">
-    </a>
-    <h3>Sinopse</h3>
-    <p class="sinopse">
-      As cinzas do Cataclismo se espalharam por todos os reinos de Azeroth. Enquanto o mundo se recupera do desastre, a renomada feiticeira Jaina Proudmore continua sua eterna luta para forjar a paz entre as forças da Horda e da Aliança. Mas seus esforços podem não ser suficientes... Os últimos acontecimentos e antigas tensões deixam as duas facções à beira da guerra. E ameaçam destruir a pouca estabilidade conquistada...
-      As forças da Aliança se dirigem a Theramore para repelir o ataque da Horda. Mas os defensores estão despreparados para enfrentar a estratégia vil e astuta de Garrosh. O ataque irá transformar Jaina de modo irrevogável, engolfando a ardorosa pacifista nas caóticas e desesperadoras... marés da guerra.
-    </p>
-    <p>Fonte: Google Books</p>
-    <table class="tabela">
-      <thead>
-        <th>Data</th>
-        <th>Autor</th>
-        <th>Idioma Original</th>
-        <th>Gêneros</th>
-        <th>Páginas</th>
-        <th>Editora</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>28 de agosto de 2012</td>
-          <td>Christie Golden</td>
-          <td>Inglês</td>
-          <td>Ficção científica, Literatura fantástica, Alta fantasia</td>
-          <td>350</td>
-          <td>Galera</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <hr>
-</body>
+    <style>
+      body {
+        background: hsla(194, 57%, 44%, 1);
+        background: linear-gradient(
+          90deg,
+          hsla(194, 57%, 44%, 1) 35%,
+          /* hsla(260, 66%, 25%, 1) 100% */ hsla(219, 47%, 36%, 1) 100%
+        );
+        /* color: #FAFAFA; */
+        color: hsla(260, 66%, 25%, 1);
+        /* width: 800px; */
+      }
+      .cabecalho h1,
+      .sumario h2 {
+        margin-top: 4rem;
+      }
+      .cabecalho,
+      .sumario,
+      .livros,
+      .topo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+      }
+      .livros img {
+        width: 200px;
+        height: 300px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .livros img:hover {
+        /* border: 1px solid hsla(260, 66%, 25%, 1); */
+        opacity: 60%;
+      }
+      .sinopse {
+        text-align: justify;
+        padding: 0 300px;
+      }
+      table {
+        width: 90%;
+      }
+      table,
+      th,
+      td {
+        border: 2px solid hsla(260, 66%, 25%, 1);
+        border-collapse: collapse;
+        text-align: center;
+      }
+      table th {
+        width: 18%;
+      }
+      a {
+        text-decoration: none;
+        /* color: #FAFAFA; */
+        color: hsla(260, 66%, 25%, 1);
+      }
+      hr {
+        margin: 2rem 4rem;
+        background-color: hsla(260, 66%, 25%, 1);
+        border: none;
+        height: 2px;
+      }
+      .topo {
+        margin-top: 2rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cabecalho">
+      <h1>Estante de Livros</h1>
+      <p>Sua biblioteca à um clique de distancia</p>
+    </div>
+
+    <div class="sumario">
+      <h2 id="topo">Sumário:</h2>
+      <ol>
+        <li><a href="#1">Harry Potter e a Ordem da Fênix</a></li>
+        <li><a href="#2">O Senhor dos Anéis: A Sociedade do Anel</a></li>
+        <li><a href="#3">Game of Thrones: As Crônicas de Gelo e Fogo</a></li>
+        <li>
+          <a href="#4"
+            >As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-roupa</a
+          >
+        </li>
+        <li><a href="#5">World of Warcraft: Marés de Guerra</a></li>
+      </ol>
+    </div>
+    <hr />
+    <section class="livros primeiro">
+      <h2 id="1">Harry Potter e a Ordem da Fênix</h2>
+      <a
+        href="https://www.amazon.com.br/Harry-Potter-Ordem-Fe%CC%82nix-S%C3%A9rie-ebook/dp/B01LQM96IC"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://m.media-amazon.com/images/I/519namgWJTL.jpg"
+          alt="Capa Livro Harry Potter e a Ordem da Fênix"
+        />
+      </a>
+      <h3>Sinopse</h3>
+      <p class="sinopse">
+        Parece impossível, mas, no bairro mais Muggle do mundo Muggle, Harry é
+        emboscado por Dementors! Para salvar a sua vida e a do primo Dudley,
+        Harry não tem outra hipótese senão usar magia - mesmo sabendo que isso
+        significará a sua expulsão mais que certa de Hogwarts. Enquanto o
+        Ministério da Magia continua a não acreditar que o terrível Senhor das
+        Trevas está de volta, Voldemort e os seus fiéis Devoradores da Morte já
+        começaram a preparar o seu regresso ao poder. Porém, há uma nova
+        esperança: uma antiga ordem secreta, da qual os pais de Harry fizeram
+        parte, voltou a organizar-se e Dumbledore está atento.
+      </p>
+      <p>Fonte: Google Books</p>
+      <table class="tabela">
+        <thead>
+          <th>Data</th>
+          <th>Autor</th>
+          <th>Idioma Original</th>
+          <th>Gêneros</th>
+          <th>Páginas</th>
+          <th>Editora</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>21 de Junho de 2003</td>
+            <td>J. K. Rowling</td>
+            <td>Inglês</td>
+            <td>Ação, Fantasia, Aventura</td>
+            <td>702</td>
+            <td>Rocco</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="topo">
+      <a href="#topo">Voltar ao Topo</a>
+    </div>
+    <hr />
+    <section class="livros segundo">
+      <h2 id="2">O Senhor dos Anéis: A Sociedade do Anel</h2>
+      <a
+        href="https://www.amazon.com.br/Senhor-dos-An%C3%A9is-Sociedade-Anel/dp/8595084750"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://m.media-amazon.com/images/I/41RBd2DvmgL.jpg"
+          alt="Capa Livro O Senhor dos Anéis: A Sociedade do Anel"
+        />
+      </a>
+      <h3>Sinopse</h3>
+      <p class="sinopse">
+        Em uma terra fantástica e única, um hobbit recebe de presente de seu tio
+        um anel mágico e maligno que precisa ser destruído antes que caia nas
+        mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente,
+        onde encontra perigo, medo e seres bizarros. Ao seu lado para o
+        cumprimento desta jornada, ele aos poucos pode contar com outros
+        hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove
+        seres que formam a Sociedade do Anel.
+      </p>
+      <p>Fonte: Google Books</p>
+      <table class="tabela">
+        <thead>
+          <th>Data</th>
+          <th>Autor</th>
+          <th>Idioma Original</th>
+          <th>Gêneros</th>
+          <th>Páginas</th>
+          <th>Editora</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>29 de julho de 1954</td>
+            <td>J.R.R. Tolkien</td>
+            <td>Inglês</td>
+            <td>Ação, Fantasia, Aventura</td>
+            <td>576</td>
+            <td>HarperCollins Brasil</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="topo">
+      <a href="#topo">Voltar ao Topo</a>
+    </div>
+    <hr />
+    <section class="livros terceiro">
+      <h2 id="3">Game of Thrones: As Crônicas de Gelo e Fogo</h2>
+      <a
+        href="https://www.amazon.com.br/Guerra-dos-Tronos-Cr%C3%B4nicas-Gelo/dp/8556510787"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://m.media-amazon.com/images/I/515dEL-sQ7L.jpg"
+          alt="Capa Livro Game of Thrones: As Crônicas de Gelo e Fogo"
+        />
+      </a>
+      <h3>Sinopse</h3>
+      <p class="sinopse">
+        A guerra dos tronos é o primeiro livro da série best-seller
+        internacional As Crônicas de Gelo e Fogo, que deu origem à adaptação de
+        sucesso da HBO, Game of Thrones. O verão pode durar décadas. O inverno,
+        toda uma vida. E a guerra dos tronos começou. Como Guardião do Norte,
+        lorde Eddard Stark não fica feliz quando o rei Robert o proclama a nova
+        Mão do Rei. Sua honra o obriga a aceitar o cargo e deixar seu posto em
+        Winterfell para rumar para a corte, onde os homens fazem o que lhes
+        convém, não o que devem... e onde um inimigo morto é algo a ser
+        admirado. Longe de casa e com a família dividida, Eddard se vê cada vez
+        mais enredado nas intrigas mortais de Porto Real, sem saber que perigos
+        ainda maiores espreitam a distância. Nas florestas ao norte de
+        Winterfell, forças sobrenaturais se espalham por trás da Muralha que
+        protege a região. E, nas Cidades Livres, o jovem Rei Dragão exilado na
+        Rebelião de Robert planeja sua vingança e deseja recuperar sua herança
+        de família: o Trono de Ferro de Westeros.
+      </p>
+      <p>Fonte: Google Books</p>
+      <table class="tabela">
+        <thead>
+          <th>Data</th>
+          <th>Autor</th>
+          <th>Idioma Original</th>
+          <th>Gêneros</th>
+          <th>Páginas</th>
+          <th>Editora</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 de agosto de 1996</td>
+            <td>George R. R. Martin</td>
+            <td>Inglês</td>
+            <td>Romance, Fantasia, Drama</td>
+            <td>600</td>
+            <td>Suma</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="topo">
+      <a href="#topo">Voltar ao Topo</a>
+    </div>
+    <hr />
+    <section class="livros quarto">
+      <h2 id="4">
+        As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-roupa
+      </h2>
+      <a
+        href="https://www.amazon.com.br/As-Cr%C3%B4nicas-N%C3%A1rnia-Feiticeira-Guarda-roupa/dp/6555114746"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://m.media-amazon.com/images/I/71Oxu4u6evL.jpg"
+          alt="Capa Livro As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-roupa"
+        />
+      </a>
+      <h3>Sinopse</h3>
+      <p class="sinopse">
+        Reinos mágicos, criaturas inesquecíveis e batalhas épicas entre o bem o
+        mal: essas histórias são narradas em As Crônicas de Nárnia — uma série
+        de sete livros que acompanha crianças curiosas e suas aventuras entre o
+        nosso mundo e outros universos mágicos. O Leão, a Feiticeira e o
+        Guarda-roupa conta a história dos irmãos Pedro, Susana, Edmundo e Lúcia
+        Pevensie. Em meio a brincadeiras na casa de um velho professor, eles
+        descobrem um misterioso guarda-roupa que os leva a Nárnia, um reino
+        mágico que sofre de um inverno sem fim desde que Jadis, a temida
+        Feiticeira Branca, tomou o poder. Mas uma antiga profecia — que envolve
+        justamente quatro crianças, além de um fantástico leão chamado Aslan —
+        afirma que há esperança para o reino, contanto que se tenha coragem.
+      </p>
+      <p>Fonte: Google Books</p>
+      <table class="tabela">
+        <thead>
+          <th>Data</th>
+          <th>Autor</th>
+          <th>Idioma Original</th>
+          <th>Gêneros</th>
+          <th>Páginas</th>
+          <th>Editora</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>16 de outubro de 1950</td>
+            <td>C.S. Lewis</td>
+            <td>Inglês</td>
+            <td>Romance, Fantasia, Aventura</td>
+            <td>208</td>
+            <td>HarperCollins Brasil</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="topo">
+      <a href="#topo">Voltar ao Topo</a>
+    </div>
+    <hr />
+    <section class="livros quinto">
+      <h2 id="5">World of Warcraft: Marés de Guerra</h2>
+      <a
+        href="https://www.amazon.com.br/World-Warcraft-guerra-Christie-Golden/dp/8501401250"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://m.media-amazon.com/images/I/81sNFlK6EQL.jpg"
+          alt="Capa Livro World of Warcraft: Marés de Guerra"
+        />
+      </a>
+      <h3>Sinopse</h3>
+      <p class="sinopse">
+        As cinzas do Cataclismo se espalharam por todos os reinos de Azeroth.
+        Enquanto o mundo se recupera do desastre, a renomada feiticeira Jaina
+        Proudmore continua sua eterna luta para forjar a paz entre as forças da
+        Horda e da Aliança. Mas seus esforços podem não ser suficientes... Os
+        últimos acontecimentos e antigas tensões deixam as duas facções à beira
+        da guerra. E ameaçam destruir a pouca estabilidade conquistada... As
+        forças da Aliança se dirigem a Theramore para repelir o ataque da Horda.
+        Mas os defensores estão despreparados para enfrentar a estratégia vil e
+        astuta de Garrosh. O ataque irá transformar Jaina de modo irrevogável,
+        engolfando a ardorosa pacifista nas caóticas e desesperadoras... marés
+        da guerra.
+      </p>
+      <p>Fonte: Google Books</p>
+      <table class="tabela">
+        <thead>
+          <th>Data</th>
+          <th>Autor</th>
+          <th>Idioma Original</th>
+          <th>Gêneros</th>
+          <th>Páginas</th>
+          <th>Editora</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>28 de agosto de 2012</td>
+            <td>Christie Golden</td>
+            <td>Inglês</td>
+            <td>Ficção científica, Literatura fantástica, Alta fantasia</td>
+            <td>350</td>
+            <td>Galera</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="topo">
+      <a href="#topo">Voltar ao Topo</a>
+    </div>
+    <hr />
+  </body>
 </html>
