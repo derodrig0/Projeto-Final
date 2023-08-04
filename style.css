@@ -1,8 +1,15 @@
 #sobre,
-#serviços,
+#servicos,
 #portfolio,
 #contato {
-  padding: 10rem 0;
+  padding: 5rem 0;
+  margin-bottom: 2rem;
+  font-family: "Helvetica";
+  color: #ffbb33;
+}
+
+.content {
+  background: #222;
 }
 
 .bgimage {
@@ -22,8 +29,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  /* color: #c4c4c4; */
+  color: #ffbb33;
 }
 
 .heroDesc {
@@ -36,7 +42,7 @@
 }
 
 .servicesText.card {
-  height: 280px;
+  height: 270px;
   cursor: pointer;
   padding: 0 2rem;
 }
@@ -49,74 +55,110 @@
 
 .cardTitle {
   text-align: center;
+  font-weight: bold;
 }
 
 .cardText {
-  text-align: center;
+  text-align: justify;
 }
 
-.card:hover .servicesIcon {
-  color: #008000;
+.link {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  background: #222;
+  color: #ffbb33;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.link:hover {
+  color: #222;
+  background: #ffbb33;
+  /* border-radius: 4px; */
+}
+
+.card:hover .servicesIcon .contactIcon {
+  color: #ffbb33;
 }
 
 .servicesText:hover {
-  border: 1px solid #008000;
+  border: 1px solid #ffbb33;
+  background: #222;
+  color: #ffbb33;
 }
+
+.contact:hover .contactIcon {
+  color: #ffbb33;
+}
+
 
 /* Estilização do cabeçalho */
 .navbar {
-  background: rgba(0, 99, 66, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
   font-weight: bold;
 }
 
 .navbar a {
-  color: #fff;
+  color: #ffbb33;
   padding: 0.5rem;
 }
 
 .navbar a:hover {
-  background: #ddd;
-  color: #000;
+  background: #ffbb33;
+  color: #222;
   border-radius: 4px;
 }
 
 .contactIcon {
   font-size: 2.5rem;
-  color: #006342;
+  color: #222;
+  padding: 1rem 0;
 }
 
 footer {
-  background: #003020;
+  background: #222;
 }
 
 .footerIcon {
   font-size: 2rem;
-  color: #fff;
+  color: #ffbb33;
 }
 
 .footerIcon:hover {
-  color: #c4c4c4;
+  color: #ffaa00;
 }
 
 .footerDev {
-  background: #006342;
+  background: #000;
+  color: #ffbb33;
 }
 
 .glass {
   position: absolute;
-  width: 200px;
-  height: 40%;
+  height: 45%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba( 247, 239, 239, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 0px );
-  -webkit-backdrop-filter: blur( 0px );
+
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+.phone,
+.mail p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.socialnetworks {
+  background: #222;
 }
