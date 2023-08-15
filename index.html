@@ -26,9 +26,9 @@
   </head>
   <body>
     <!-- Menu Fixo -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Rodrigo</a>
+        <!-- <a class="navbar-brand" href="#">Rodrigo</a> -->
         <button
           class="navbar-toggler"
           data-bs-toggle="collapse"
@@ -39,8 +39,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#inicio">Início</a>
             </li>
@@ -48,7 +48,7 @@
               <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#servicos">Serviços</a>
+              <a class="nav-link" href="#servicos">Conhecimentos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfólio</a>
@@ -99,13 +99,15 @@
           <!-- Informações Sobre Mim -->
           <div class="col-lg-8">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Architecto, recusandae! Illum minima ipsa dolorem fugit quia modi
-              assumenda error ab enim delectus, aspernatur ad repellendus autem
-              quae a aliquam non.
+              Sou um profissional com mais de 10 anos de experiência como
+              Técnico de Suporte, oferecendo assistência técnica tanto
+              localmente quanto em campo para diversos tipos de equipamentos de
+              informática. Minha trajetória profissional evoluiu ao longo dos
+              anos, e desde 2018, venho atuando como Analista de Suporte Técnico
+              em uma conceituada empresa desenvolvedora de soluções fiscais.
             </p>
             <div class="row mt-3">
-              <div class="col-md-4">
+              <div class="col-md-5">
                 <ul>
                   <li>Nome: Rodrigo Alves da Rosa</li>
                   <li>Idade: 44 Anos</li>
@@ -114,14 +116,14 @@
               </div>
             </div>
             <!-- Paragrafo + Infos -->
-            <div class="row mt-3">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis, exercitationem quisquam? Quos, id soluta. Quis
-                alias accusantium repudiandae amet molestiae ex sequi aspernatur
-                harum, dolore, sint eveniet, sed facilis veniam!
-              </p>
-            </div>
+            <p>
+              Além da minha experiência anterior, estou constantemente
+              buscando aprimorar minhas habilidades e conhecimentos.
+              Atualmente, estou dedicando meu tempo cursando online de
+              Desenvolvimento Web. Seja bem-vindo a explorar meus projetos,
+              conquistas e ambições aqui apresentados.
+            </p>
+            <!-- <div class="row mt-3"></div> -->
           </div>
         </div>
       </div>
@@ -130,7 +132,7 @@
     <!-- Services section -->
     <section id="servicos">
       <div class="container content p-3">
-        <h2 class="text-center pt-2">Serviços</h2>
+        <h2 class="text-center pt-2">Conhecimentos</h2>
 
         <!-- primeira linha -->
         <div class="row">
@@ -138,9 +140,10 @@
             <div class="card servicesText">
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
-                <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
+                <h3 class="cardTitle mt-3">Linguagens de Programação</h3>
                 <p class="cardText mt-5 text-center">
-                  exemplo de trabalhos feitos no desenvolvimento de sites
+                  Tenho conhecimento em diversas linguagens de programação,
+                  incluindo: Magic, Visual Basic, C# e Delphi.
                 </p>
               </div>
             </div>
@@ -150,9 +153,10 @@
             <div class="card servicesText">
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
-                <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
+                <h3 class="cardTitle mt-3">Bancos de Dados</h3>
                 <p class="cardText mt-5 text-center">
-                  exemplo de trabalhos feitos no desenvolvimento de sites
+                  Relacionais: SQL Server, Oracle, Firebird, MySql <br />
+                  Não Relacionais: Firestore
                 </p>
               </div>
             </div>
@@ -165,9 +169,11 @@
             <div class="card servicesText">
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
-                <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
+                <h3 class="cardTitle mt-3">Equipamento de Informática</h3>
                 <p class="cardText mt-5 text-center">
-                  exemplo de trabalhos feitos no desenvolvimento de sites
+                  Montagem e configuração de Computadores <br />
+                  Configuração e manutenção de notebooks <br />
+                  Instalação e configuração de impressoras, roteadores e etc.
                 </p>
               </div>
             </div>
@@ -177,9 +183,13 @@
             <div class="card servicesText">
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
-                <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
+                <h3 class="cardTitle mt-3">Desenvolvimento Web</h3>
                 <p class="cardText mt-5 text-center">
-                  exemplo de trabalhos feitos no desenvolvimento de sites
+                  <i class="fa-brands fa-html5"></i> - HTML5
+                  <br />
+                  <i class="fa-brands fa-css3-alt"></i> - CSS3
+                  <br />
+                  <i class="fa-brands fa-js"></i> - JavaScript
                 </p>
               </div>
             </div>
@@ -212,7 +222,11 @@
                   trabalhei com divisões, imagens, lista ordenadas e tabelas.
                 </p>
                 <div class="text-center mb-3">
-                  <a class="link" href="portfolio/Estante/index.html" target="_blank">
+                  <a
+                    class="link"
+                    href="portfolio/Estante/index.html"
+                    target="_blank"
+                  >
                     Link
                   </a>
                 </div>
@@ -238,7 +252,11 @@
                   trabalhei com divisões, imagens, lista ordenadas e tabelas.
                 </p>
                 <div class="text-center mb-3">
-                  <a class="link" href="portfolio/Locadora/index.html" target="_blank">
+                  <a
+                    class="link"
+                    href="portfolio/Locadora/index.html"
+                    target="_blank"
+                  >
                     Link
                   </a>
                 </div>
@@ -266,7 +284,11 @@
                   trabalhei com divisões, imagens, lista ordenadas e tabelas.
                 </p>
                 <div class="text-center mb-3">
-                  <a class="link" href="portfolio/Mario/index.html" target="_blank">
+                  <a
+                    class="link"
+                    href="portfolio/Mario/index.html"
+                    target="_blank"
+                  >
                     Link
                   </a>
                 </div>
@@ -291,7 +313,11 @@
                   trabalhei com divisões, imagens, lista ordenadas e tabelas.
                 </p>
                 <div class="text-center mb-3">
-                  <a class="link" href="portfolio/Cartao/index.html" target="_blank">
+                  <a
+                    class="link"
+                    href="portfolio/Cartao/index.html"
+                    target="_blank"
+                  >
                     Link
                   </a>
                 </div>
@@ -299,7 +325,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -314,7 +339,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6934.704443486809!2d-50.77777298235853!3d-29.65155192616119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95191928aeae1933%3A0x7cab6a4f9d7fd706!2sPetr%C3%B3polis%2C%20Taquara%20-%20RS%2C%2095600-000!5e0!3m2!1spt-BR!2sbr!4v1690850360478!5m2!1spt-BR!2sbr"
                 width="634"
                 height="270"
-                style="border: 0; border-radius: 4px;"
+                style="border: 0; border-radius: 4px"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -350,7 +375,9 @@
     <!-- Footer -->
     <footer class="text-center">
       <div class="container socialnetworks p-2">
-        <div class="row mt-4 mb-4 d-flex justify-content-between align-items-center">
+        <div
+          class="row mt-4 mb-4 d-flex justify-content-between align-items-center"
+        >
           <div class="col-lg-3">
             <a href="https://github.com/derodrig0/" target="_blank">
               <i class="fa-brands fa-github-alt footerIcon"></i>
@@ -379,6 +406,6 @@
       <div class="text-center p-3 footerDev">
         <p>Desenvolvido por Rodrigo Rosa</p>
       </div>
-    </footer> 
+    </footer>
   </body>
 </html>
