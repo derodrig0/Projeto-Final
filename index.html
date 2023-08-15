@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <!-- JS -->
-    <script src="script.js"></script>
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -62,12 +60,14 @@
         </div>
       </div>
     </nav>
+    <!-- JS -->
+    <script src="script.js"></script>
 
     <!-- Hero Section -->
     <section class="bgimage" id="inicio">
       <div class="container-fluid">
         <div class="row">
-          <div class="glass">
+          <div class="glass w-75">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heroText">
               <h1 class="heroTitle">
                 Olá, pessoal <br />
@@ -85,13 +85,13 @@
 
     <!-- About section -->
     <section id="sobre">
-      <div class="container content">
-        <h2 class="text-center p-3">Sobre Mim</h2>
-        <div class="row mt-4">
+      <div class="container content p-3">
+        <h2 class="text-center p-2">Sobre Mim</h2>
+        <div class="row pe-2 ps-2">
           <!-- Imagem Sobre Mim -->
           <div class="col-lg-4">
             <img
-              src="https://fakeimg.pl/300x220/?text=FAKE IMAGE"
+              src="https://fakeimg.pl/350x350/?text=FAKE IMAGE"
               alt="Sobre Mim"
               class="aboutImage"
             />
@@ -105,7 +105,7 @@
               quae a aliquam non.
             </p>
             <div class="row mt-3">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <ul>
                   <li>Nome: Rodrigo Alves da Rosa</li>
                   <li>Idade: 44 Anos</li>
@@ -139,18 +139,19 @@
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
                 <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
-                <p class="cardText mt-3">
+                <p class="cardText mt-5 text-center">
                   exemplo de trabalhos feitos no desenvolvimento de sites
                 </p>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 mt-4">
             <div class="card servicesText">
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
                 <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
-                <p class="cardText mt-3">
+                <p class="cardText mt-5 text-center">
                   exemplo de trabalhos feitos no desenvolvimento de sites
                 </p>
               </div>
@@ -165,18 +166,19 @@
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
                 <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
-                <p class="cardText mt-3">
+                <p class="cardText mt-5 text-center">
                   exemplo de trabalhos feitos no desenvolvimento de sites
                 </p>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 mt-4">
             <div class="card servicesText">
               <div class="cardBody">
                 <i class="fa-solid fa-check servicesIcon"></i>
                 <h3 class="cardTitle mt-3">Desenvolvimento de Sites</h3>
-                <p class="cardText mt-3">
+                <p class="cardText mt-5 text-center">
                   exemplo de trabalhos feitos no desenvolvimento de sites
                 </p>
               </div>
@@ -297,6 +299,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -306,31 +309,32 @@
         <h2 class="text-center">Contate ME</h2>
         <div class="row mt-4">
           <div class="col-lg-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6934.704443486809!2d-50.77777298235853!3d-29.65155192616119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95191928aeae1933%3A0x7cab6a4f9d7fd706!2sPetr%C3%B3polis%2C%20Taquara%20-%20RS%2C%2095600-000!5e0!3m2!1spt-BR!2sbr!4v1690850360478!5m2!1spt-BR!2sbr"
-              width="600"
-              height="550"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <div class="contactMap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6934.704443486809!2d-50.77777298235853!3d-29.65155192616119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95191928aeae1933%3A0x7cab6a4f9d7fd706!2sPetr%C3%B3polis%2C%20Taquara%20-%20RS%2C%2095600-000!5e0!3m2!1spt-BR!2sbr!4v1690850360478!5m2!1spt-BR!2sbr"
+                width="634"
+                height="270"
+                style="border: 0; border-radius: 4px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
-          <!-- Cards centralizados no container pai -->
-          <div class="col-lg-6 d-flex justify-content-center">
-            <div class="col-lg-10 d-flex align-items-center flex-column text-center">
-              <div class="col-lg-10">
-                <div class="card servicesText contact mb-2">
-                  <div class="cardBody phone">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card servicesText">
+                  <div class="cardBody mt-2 text-center">
                     <i class="fa-solid fa-mobile contactIcon"></i>
                     <h3>Telefone</h3>
-                    <p>(51)99999-9999</p>
+                    <p>(51) 99999-9999</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-10">
-                <div class="card servicesText contact">
-                  <div class="cardBody mail">
+              <div class="col-lg-6">
+                <div class="card servicesText">
+                  <div class="cardBody mt-1 text-center">
                     <i class="fa-solid fa-envelope contactIcon"></i>
                     <h3>Email</h3>
                     <p>rodrigo@email.com</p>
@@ -346,7 +350,7 @@
     <!-- Footer -->
     <footer class="text-center">
       <div class="container socialnetworks p-2">
-        <div class="row mt-4 mb-4">
+        <div class="row mt-4 mb-4 d-flex justify-content-between align-items-center">
           <div class="col-lg-3">
             <a href="https://github.com/derodrig0/" target="_blank">
               <i class="fa-brands fa-github-alt footerIcon"></i>
@@ -365,16 +369,16 @@
               <i class="fa-brands fa-facebook footerIcon"></i>
             </a>
           </div>
-          <div class="col-lg-3">
+          <!-- <div class="col-lg-3">
             <a href="https://twitch.tv/" target="_blank">
               <i class="fa-brands fa-twitch footerIcon"></i>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="text-center p-3 footerDev">
         <p>Desenvolvido por Rodrigo Rosa</p>
       </div>
-    </footer>
+    </footer> 
   </body>
 </html>

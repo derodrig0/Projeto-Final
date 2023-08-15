@@ -1,3 +1,23 @@
+body {
+  background: hsla(0, 0%, 13%, 1);
+  background: linear-gradient(
+    270deg,
+    hsla(0, 0%, 13%, 1) 20%,
+    hsla(40, 100%, 60%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(0, 0%, 13%, 1) 20%,
+    hsla(40, 100%, 60%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(0, 0%, 13%, 1) 20%,
+    hsla(40, 100%, 60%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222222", endColorstr="#FFBB33", GradientType=1 );
+}
+
 #sobre,
 #servicos,
 #portfolio,
@@ -62,6 +82,15 @@
   text-align: justify;
 }
 
+.card:hover .servicesIcon {
+  color: #ffbb33;
+}
+
+.servicesText:hover {
+  border: 1px solid #222;
+  color: #ffbb33;
+}
+
 .link {
   text-decoration: none;
   padding: 0.5rem 2rem;
@@ -74,10 +103,13 @@
 .link:hover {
   color: #222;
   background: #ffbb33;
-  /* border-radius: 4px; */
 }
 
-.card:hover .servicesIcon .contactIcon {
+.card:hover .servicesIcon {
+  color: #ffbb33;
+}
+
+.card:hover .contactIcon {
   color: #ffbb33;
 }
 
@@ -91,18 +123,16 @@
   color: #ffbb33;
 }
 
-
 /* Estilização do cabeçalho */
 .navbar {
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
   font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar .navbar-brand{
+  font-size: 1.5rem;
 }
 
 .navbar a {
@@ -111,15 +141,21 @@
 }
 
 .navbar a:hover {
-  background: #ffbb33;
   color: #222;
   border-radius: 4px;
+  background: #ffbb33;
+}
+
+.navbar-scrolled {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .contactIcon {
   font-size: 2.5rem;
   color: #222;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 footer {
@@ -146,9 +182,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
 }
@@ -161,4 +195,10 @@ footer {
 
 .socialnetworks {
   background: #222;
+}
+
+#contato .cardBody p {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
