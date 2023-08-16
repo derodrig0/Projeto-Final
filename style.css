@@ -84,7 +84,7 @@ body {
   padding: 0 1rem;
 }
 
-.cardText i{
+.cardText i {
   font-size: 1.5rem;
 }
 
@@ -149,7 +149,7 @@ body {
   font-size: 1.5rem;
 }
 
-.nav-link{
+.nav-link {
   width: 180px;
   text-align: center;
 }
@@ -222,7 +222,7 @@ footer {
   font-size: 1.4rem;
 }
 
-#sobre p{
+#sobre p {
   text-align: justify;
   padding: 1rem 1rem;
 }
